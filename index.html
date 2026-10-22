@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="calc-container">
+        
+        <h1>Цветочный магазин</h1>
+
+        <form id="order-form">
+            <div class="form-group">
+                <label for="product-select">Выберите товар:</label>
+                <select id="product-select" name="product">
+                    <option value="150">Роза — 150 руб.</option>
+                    <option value="80">Тюльпан — 80 руб.</option>
+                    <option value="250">Пион — 250 руб.</option>
+                    <option value="120">Хризантема — 120 руб.</option>
+                    <option value="200">Лилия — 200 руб.</option>
+                    <option value="350">Орхидея — 350 руб.</option>
+                    <option value="100">Гербера — 100 руб.</option>
+                    <option value="60">Ромашка — 60 руб.</option>
+                    <option value="70">Гвоздика — 70 руб.</option>
+                    <option value="90">Лаванда — 90 руб.</option>
+                    <option value="130">Подсолнух — 130 руб.</option>
+                    <option value="300">Гортензия — 300 руб.</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity-input">Количество:</label>
+                <input type="text" id="quantity-input" name="quantity" placeholder="Введите число">
+            </div>
+
+            <button type="submit" id="calc-btn">Рассчитать стоимость</button>
+        </form>
+
+        <div id="error-message" class="error"></div>
+        <div id="result-message" class="result"></div>
+
+    </div> 
+
+</body>
+</html>
